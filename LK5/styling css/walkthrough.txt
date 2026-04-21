@@ -1,0 +1,97 @@
+# Rekap Prompt & Perubahan — Portfolio Risky Putra Adielia
+
+## Prompt 1: "Tolong analisa kekurangan dari file index.html"
+
+Dilakukan analisa menyeluruh terhadap file `index.html`. Ditemukan **14 kekurangan** yang dikelompokkan:
+
+| Kategori | Jumlah | Detail |
+|---|---|---|
+| 🔴 Kritis | 3 | Path gambar salah, `<label>` tanpa `for`, `<option>` tanpa `value` |
+| 🟡 SEO & Semantik | 4 | Tidak ada meta description, title kurang deskriptif, hero tanpa heading, `lang="en"` harusnya `"id"` |
+| 🟡 Aksesibilitas | 3 | Alt text generik, form tanpa fieldset/legend, tidak ada skip-navigation |
+| 🟡 Best Practice | 4 | Tidak ada favicon, kontak plain text, section form tidak di navbar, tidak ada responsive menu |
+
+---
+
+## Prompt 2: "Bantu saya perbaiki"
+
+### Perubahan di [index.html](file:///d:/Kuliah/Semester%204/Pemrograman%20Web/LK06%20Risky/LK5/styling%20css/index.html):
+- `lang="en"` → `lang="id"`
+- Ditambahkan `<meta name="description">`
+- Title diubah menjadi lebih deskriptif
+- Path gambar diperbaiki: `/img/DSC_0395.JPG` → `Riskypp.jpeg`
+- Alt text diubah: `"Profile Image"` → `"Foto Risky Putra Adielia"`
+- Ditambahkan heading `<h2>` di hero section
+- Semua `<label>` ditambahkan atribut `for`
+- Semua `<option>` ditambahkan atribut `value`
+- Email & No HP dibuat clickable (`mailto:` dan `tel:`)
+- Ditambahkan link navigasi "Pendaftaran" di navbar
+- Ditambahkan skip-navigation link
+- Form dibungkus `<fieldset>` dan `<legend>`
+- Ditambahkan `aria-live` pada preview & notif
+- Ditambahkan `name` attribute pada semua input
+
+---
+
+## Prompt 3: "File style.css"
+
+### Analisa & perbaikan di [style.css](file:///d:/Kuliah/Semester%204/Pemrograman%20Web/LK06%20Risky/LK5/styling%20css/style.css):
+- Warna `#ff0000` (merah murni) → `#c0392b` (merah yang lebih profesional & konsisten)
+- Font `Arial` → `"Segoe UI", Tahoma, Geneva, Verdana, sans-serif`
+- Ditambahkan `scroll-behavior: smooth` untuk navigasi anchor
+- Navbar dibuat **sticky** dengan `box-shadow`
+- Ditambahkan style untuk `.skip-link` (aksesibilitas)
+- Ditambahkan **hover effect** pada card article (transform + shadow)
+- Ditambahkan **transition** pada link, button, dan input
+- Ditambahkan **focus state** pada input/select/textarea (border + box-shadow)
+- Ditambahkan style untuk `fieldset`, `legend`, `label`
+- Ditambahkan style untuk `#preview`, `#notif`, `#listData`
+- Hero section diberi background gradient
+- Hero image diberi border & shadow
+- Button hover warna konsisten (merah → merah gelap, bukan biru)
+- Footer warna diperbarui ke `#2c3e50`
+
+---
+
+## Prompt 4: "File script.js"
+
+### Analisa & perbaikan di [script.js](file:///d:/Kuliah/Semester%204/Pemrograman%20Web/LK06%20Risky/LK5/styling%20css/script.js):
+- Dibungkus dengan `DOMContentLoaded` (best practice)
+- Dihapus semua `console.log` debug
+- Validasi email ditingkatkan: `includes("@")` → regex `^[^\s@]+@[^\s@]+\.[^\s@]+$`
+- Ditambahkan fungsi `sanitize()` untuk mencegah **XSS**
+- `innerHTML` dengan user input diganti ke **DOM manipulation** yang aman
+- Preview diperluas: tidak hanya nama, tapi juga email & kategori
+- Ditambahkan fungsi `showNotif()` yang lebih terstruktur
+- Data pesan ditampilkan di list hasil submit
+
+---
+
+## Prompt 5: "Bisa buatkan agar ada pop up setelah mengisi form?"
+
+### Perubahan di 3 file:
+
+#### [index.html](file:///d:/Kuliah/Semester%204/Pemrograman%20Web/LK06%20Risky/LK5/styling%20css/index.html)
+- Ditambahkan elemen modal popup (`#modal-overlay`, `.modal-box`, `#modal-body`, `#modal-close`)
+- Menggunakan atribut aksesibilitas: `role="dialog"`, `aria-modal`, `aria-labelledby`
+
+#### [style.css](file:///d:/Kuliah/Semester%204/Pemrograman%20Web/LK06%20Risky/LK5/styling%20css/style.css)
+- Ditambahkan style modal: overlay dengan `backdrop-filter: blur`
+- Animasi `fadeIn` dan `slideUp` untuk efek muncul
+- Style card modal, body, icon, dan tombol tutup
+
+#### [script.js](file:///d:/Kuliah/Semester%204/Pemrograman%20Web/LK06%20Risky/LK5/styling%20css/script.js)
+- Fungsi `showModal()` menampilkan ringkasan data (Nama, Email, HP, Kategori, Pesan)
+- 3 cara menutup modal: tombol Tutup, klik di luar popup, tekan Escape
+- Body scroll dikunci saat modal terbuka
+
+---
+
+## Ringkasan Total Perubahan
+
+| File | Jumlah Perbaikan |
+|---|---|
+| `index.html` | 16 perbaikan |
+| `style.css` | 15 perbaikan |
+| `script.js` | 10 perbaikan |
+| **Total** | **41 perbaikan** |
