@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Saya</title>
+  </head>
+  <body>
+    <!-- Header utama halaman -->
+    <header>
+      <h1>Profil Saya</h1>
+      <p>Selamat datang di halaman profil sederhana saya.</p>
+    </header>
+
+    <!-- Navigasi halaman -->
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#daftar">Pendaftaran</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- Konten utama -->
+    <main>
+      <!-- Bagian tentang -->
+      <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <article>
+          <p>
+            Saya adalah Risky Putra Adielia. Seorang mahasiswa informatika yang tertarik pada teknologi, pengembangan
+            web, dan pembuatan antarmuka yang sederhana namun fungsional.
+          </p>
+        </article>
+      </section>
+
+      <!-- Bagian layanan -->
+      <section id="layanan">
+        <h2>Layanan</h2>
+        <article>
+          <h3>Web Dasar</h3>
+          <p>Pembuatan halaman profil, landing page, dan form sederhana.</p>
+        </article>
+        <article>
+          <h3>Desain Sederhana</h3>
+          <p>Membuat sebuah struktur HTML yang rapi dan mudah dibaca.</p>
+        </article>
+      </section>
+
+      <!-- Bagian form pendaftaran -->
+      <section id="daftar">
+        <h2>Form Pendaftaran</h2>
+
+        <form action="#" method="post">
+          <!-- Nama -->
+          <div>
+            <label for="nama">Nama Lengkap</label><br />
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              required  
+              minlength="3"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+
+          <br />
+
+          <!-- Email -->
+          <div>
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="nama@email.com"
+            />
+          </div>
+
+          <br />
+
+          <!-- Nomor HP -->
+          <div>
+            <label for="hp">Nomor HP</label><br />
+            <input
+              type="tel"
+              id="hp"
+              name="hp"
+              required
+              pattern="[0-9]{10,15}"
+              placeholder="08xxxxxxxxxx"
+            />
+          </div>
+
+          <br />
+
+          <!-- Kategori -->
+          <div>
+            <label for="kategori">Kategori</label><br />
+            <select id="kategori" name="kategori" required>
+              <option value="">-- Pilih Kategori --</option>
+              <option value="pelajar">Pelajar</option>
+              <option value="mahasiswa">Mahasiswa</option>
+              <option value="umum">Umum</option>
+            </select>
+          </div>
+
+          <br />
+
+          <!-- Pesan -->
+          <div>
+            <label for="pesan">Pesan</label><br />
+            <textarea
+              id="pesan"
+              name="pesan"
+              rows="5"
+              required
+              placeholder="Tulis pesan Anda di sini"
+            ></textarea>
+          </div>
+
+          <br />
+
+          <button type="submit">Daftar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer halaman -->
+    <footer id="kontak">
+      <p>&copy; 2026 Profil Saya. Semua hak dilindungi.</p>
+    </footer>
+  </body>
+</html>

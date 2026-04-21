@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas LK4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- KIRI -->
+        <h1 class="logo">Risky Putra Adielia</h1>
+
+        <!-- KANAN -->
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO (biar foto tetap ada) -->
+    <section class="hero">
+      <img src="/img/DSC_0395.JPG" alt="Profile Image" />
+      <p>UI/UX Designer & Frontend Developer</p>
+    </section>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Tentang -->
+      <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <article>
+          <p>
+            Saya adalah mahasiswa yang fokus pada UI/UX Design dan Frontend
+            Development. Saya terbiasa merancang antarmuka yang sederhana dan
+            intuitif, lalu mengimplementasikannya menjadi website yang responsif
+            dan mudah digunakan.
+          </p>
+        </article>
+      </section>
+
+      <!-- Skill -->
+      <section id="skill">
+        <h2>Keahlian</h2>
+
+        <div class="skill-container">
+          <article>
+            <h3>UI/UX</h3>
+            <ul>
+              <li>Wireframing (Figma)</li>
+              <li>Prototyping</li>
+              <li>User Flow</li>
+              <li>UX Research</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Frontend Developer</h3>
+            <ul>
+              <li>HTML (dasar)</li>
+              <li>CSS (Flexbox dan Grid)</li>
+              <li>Responsive Design</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Tools</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Visual Studio Code</li>
+              <li>Canva</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Project -->
+      <section id="proyek">
+        <h2>Proyek</h2>
+
+        <div class="project-container">
+          <article>
+            <h3>FigmaProjectDesign</h3>
+            <p>Aplikasi pemantauan kesehatan harian</p>
+          </article>
+
+          <article>
+            <h3>Web UNSU</h3>
+            <p>Landing page informasi pendaftaran mahasiswa baru.</p>
+          </article>
+
+          <article>
+            <h3>Binova</h3>
+            <p>Aplikasi pengelolaan sampah berbasis Android.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section id="kontak">
+        <h2>Kontak</h2>
+        <article>
+          <p>Email: rp6408822@gmail.com</p>
+          <p>No HP: 0812123456</p>
+        </article>
+      </section>
+
+      <!-- Form -->
+      <section id="form">
+        <h2>Form Pendaftaran</h2>
+
+        <form id="formPendaftaran">
+          <label>Nama:</label>
+          <input type="text" id="nama" required />
+
+          <label>Email:</label>
+          <input type="email" id="email" required />
+
+          <label>No HP:</label>
+          <input type="tel" id="hp" required />
+
+          <label>Kategori:</label>
+          <select id="kategori" required>
+            <option value="">-- Pilih --</option>
+            <option>Web Development</option>
+            <option>Desain</option>
+            <option>Konsultasi</option>
+          </select>
+
+          <label>Pesan:</label>
+          <textarea id="pesan" rows="4"></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+
+        <!-- Preview -->
+        <div id="preview"></div>
+
+        <!-- Hasil submit -->
+        <ul id="listData"></ul>
+
+        <!-- NOTIF -->
+        <div id="notif"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Risky P</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
